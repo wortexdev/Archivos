@@ -19,23 +19,192 @@
     margin: 0;
 }
 
-    .menu-vertical li {
-        margin-bottom: 10px;
-    }
+.menu-vertical li {
+    margin-bottom: 10px;
+}
 
-    .menu-vertical a {
-        display: block;
-        padding: 12px 20px;
-        color: white;
-        text-decoration: none;
-        font-size: 16px;
-    }
+.menu-vertical a {
+    display: block;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
 
-        .menu-vertical a:hover {
-            background: #34495e;
-        }
+.menu-vertical a:hover {
+    background: #34495e;
+}
 
 .contenido {
     margin-left: 240px;
     padding: 20px;
+}
+
+/* ============================
+   ESTILOS GENERALES
+   ============================ */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f4f6f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal donde cargas las vistas */
+#panel-datos {
+    
+    padding: 25px;
+
+    
+    margin-top: 20px;
+}
+
+/* ============================
+   TABLAS
+   ============================ */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+table thead {
+    background-color:black ;
+    color: #fff;
+}
+
+table th, table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+table tr:hover {
+    background: #f1f1f1;
+}
+
+/* Botones dentro de la tabla */
+table button {
+    padding: 6px 12px;
+    border: none;
+    background: #3498db;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: 0.2s;
+}
+
+table button:hover {
+    background: #2980b9;
+}
+
+table button:last-child {
+    background: #e74c3c;
+}
+
+table button:last-child:hover {
+    background: #c0392b;
+}
+
+/* ============================
+   PAGINACIÓN
+   ============================ */
+.paginacion {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.paginacion a {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 3px;
+    background: #ecf0f1;
+    color: #2c3e50;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.paginacion a:hover {
+    background: #3498db;
+    color: white;
+}
+
+.paginacion .activo {
+    background: #3498db;
+    color: white;
+}
+
+/* ============================
+   FORMULARIOS CRUD
+   ============================ */
+#formulario {
+
+    padding: 20px;
+
+    width: 350px;
+}
+
+#formulario h4 {
+    margin-top: 0;
+    padding:10px;
+    color: #2c3e50;
+}
+
+#formulario input {
+    width: 92%;
+    padding: 10px;
+    padding-right:10px;
+    margin-top: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+#formulario input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52,152,219,0.4);
+}
+
+#formulario button {
+    padding: 10px 15px;
+    background: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#formulario button:hover {
+    background: #1e8449;
+}
+
+/* Botón cancelar */
+#formulario .cancelar {
+    background: #e74c3c;
+}
+
+#formulario .cancelar:hover {
+    background: #c0392b;
+}
+
+/* ============================
+   BOTÓN NUEVO
+   ============================ */
+#panel-datos button {
+    padding: 10px 15px;
+    background: #8e44ad;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#panel-datos button:hover {
+    background: #732d91;
 }

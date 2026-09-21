@@ -61,12 +61,11 @@ function cargarCustomers(page) {
 
 function nuevo() {
     document.getElementById('formulario').innerHTML = `
-            <h4>Nuevo Cliente</h4>
-            ID: <input id="cid"><br>
-            Empresa: <input id="cname"><br>
-            Contacto: <input id="contact"><br>
-            Ciudad: <input id="city"><br>
-            País: <input id="country"><br>
+            <input id="cid" placeholder="ID"><br>
+            <input id="cname" placeholder="Nombre de la empresa"><br>
+            <input id="contact" placeholder="Nombre del contacto"><br>
+            <input id="city" placeholder="Ciudad"><br>
+            <input id="country" placeholder="País"><br>
             <button onclick="insertar()">Guardar</button>
             <button onclick="cancelar()">Cancelar</button>
         `;
@@ -93,12 +92,11 @@ function insertar() {
 
 function editar(id, emp, cont, city, country) {
     document.getElementById('formulario').innerHTML = `
-            <h4>Editar Cliente</h4>
-            ID: <input id="cid" value="${id}" readonly><br>
-            Empresa: <input id="cname" value="${emp}"><br>
-            Contacto: <input id="contact" value="${cont}"><br>
-            Ciudad: <input id="city" value="${city}"><br>
-            País: <input id="country" value="${country}"><br>
+            <input id="cid" value="${id}" placeholder="ID" readonly><br>
+            <input id="cname" value="${emp}" placeholder="Empresa"><br>
+            <input id="contact" value="${cont}" placeholder="Contacto"><br>
+            <input id="city" value="${city}" placeholder="Ciudad"><br>
+            <input id="country" value="${country}" placeholder=Pais"><br>
             <button onclick="actualizar()">Actualizar</button>
             <button onclick="cancelar()">Cancelar</button>
         `;
