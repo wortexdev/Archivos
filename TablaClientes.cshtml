@@ -1,0 +1,47 @@
+﻿@model List<Demo01.Librerias.EntidadesNegocio.beCliente>
+
+<table border="1" cellpadding="8" style="width:100%; border-collapse:collapse;">
+    <thead style="background:#eee;">
+        <tr>
+            <th>ID</th>
+            <th>Empresa</th>
+            <th>Contacto</th>
+            <th>Ciudad</th>
+            <th>País</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var c in Model)
+        {
+            <tr>
+                <td>@c.CustomerID</td>
+                <td>@c.CompanyName</td>
+                <td>@c.ContactName</td>
+                <td>@c.City</td>
+                <td>@c.Country</td>
+                <td>
+                    <button onclick="editar('@c.CustomerID','@c.CompanyName','@c.ContactName','@c.City','@c.Country')">Editar</button>
+                    <button onclick="eliminar('@c.CustomerID')">Eliminar</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div style="margin-top:20px;">
+    @{
+        int total = ViewBag.Total;
+        int page = ViewBag.Page;
+        int pageSize = ViewBag.PageSize;
+        int totalPages = (int)Math.Ceiling((double)total / pageSize);
+    }
+
+    <div>
+        Página:
+        @for (int i = 1; i <= totalPages; i++)
+        {
+            <a href="#" onclick="cargarCustomers(@i)">[@i]</a>
+        }
+    </div>
+</div>

@@ -1,0 +1,21 @@
+﻿@model List<Demo01.Librerias.EntidadesNegocio.beCategoria>
+
+<table border="1" cellpadding="8" style="width:100%; border-collapse:collapse;">
+    <thead style="background:#eee;">
+        <tr>
+            <th>ID</th>
+            <th>Categoría</th>
+            <th>Descripción</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var c in Model)
+        {
+            <tr>
+                <td>@c.CategoryID</td>
+                <td>@c.CategoryName</td>
+                <td>@c.Description</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,23 @@
+﻿@model List<Demo01.Librerias.EntidadesNegocio.beEmpleado>
+
+<table border="1" cellpadding="8" style="width:100%; border-collapse:collapse;">
+    <thead style="background:#eee;">
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Cargo</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var e in Model)
+        {
+            <tr>
+                <td>@e.EmployeeID</td>
+                <td>@e.FirstName</td>
+                <td>@e.LastName</td>
+                <td>@e.Title</td>
+            </tr>
+        }
+    </tbody>
+</table>

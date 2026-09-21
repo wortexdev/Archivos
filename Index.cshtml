@@ -1,0 +1,24 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="menu-container">
+    <ul class="menu-vertical">
+        <li><a href="#" onclick="cargarTabla()">Dashboard</a></li>
+        <li><a href="#" onclick="cargarCategorias()">Usuarios</a></li>
+        <li><a href="#" onclick="mostrarFiltroEmployees()">Employees</a></li>
+        <li><a href="#" onclick="mostrarCustomers()">Customers</a></li>
+    </ul>
+</div>
+
+<div class="contenido">
+    <h2>Bienvenido al Sistema</h2>
+    <p>Selecciona una opción del menú.</p>
+
+    <div id="panel-datos" style="margin-top:20px;"></div>
+
+    <div id="panel-datos" style="margin-top:20px;">
+        <!-- Aquí se cargará la tabla -->
+    </div>
+</div>
+
